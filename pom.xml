@@ -3,7 +3,7 @@
   <groupId>water.container</groupId>
   <artifactId>water.container</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>WaterContainer</name>
+  <name>WaterContainers</name>
   
   <!-- ** Properties ** -->
   <properties>
@@ -11,8 +11,25 @@
 		<java.version>1.8</java.version>
 		<junit-jupiter.version>5.4.0</junit-jupiter.version>
 		<junit-platform.version>1.4.0</junit-platform.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   
+  <build>
+	<finalName>WaterContainers</finalName>
+	<plugins>
+	   <plugin>
+	       <groupId>org.apache.maven.plugins</groupId>
+	       <artifactId>maven-compiler-plugin</artifactId>
+	       <version>3.8.1</version>
+	       <configuration>
+	           <source>1.8</source>
+	           <target>1.8</target>
+	       </configuration>
+	   </plugin>
+	</plugins>
+	</build>
+
   <dependencies>
   	<!-- Testing -->
 		<dependency>
